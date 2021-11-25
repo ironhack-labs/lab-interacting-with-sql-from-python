@@ -31,6 +31,6 @@ Hint: Consider making use of pandas [groupby()](https://pandas.pydata.org/docs/r
     - `Rental_June`
     - The difference between the previous columns
 
-  **Hint**: For this part, you can create a join between the two dataframes created before, using the merge function available for pandas dataframes. Here is a link to the documentation for the [merge function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
+    **Hint**: For this part, you can create a join between the two dataframes created before, using the merge function available for pandas dataframes. Here is a link to the documentation for the [merge function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
 
 7. Create a Python function that given the dataframe returned by the previous function, returns another dataframe with the `customer_id` of customers who rented movies in may but didn't rent any movie in June.
