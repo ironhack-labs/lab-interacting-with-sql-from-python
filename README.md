@@ -12,7 +12,7 @@ The database is structured as follows:
 
 <br>
 
-### Instructions
+## Instructions
 
 In this lab, we will find the customers who were active in consecutive months of May and June. Follow the steps to complete the analysis.
 
@@ -23,16 +23,19 @@ In this lab, we will find the customers who were active in consecutive months of
 Hint: Consider making use of pandas [groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) and pandas [`agg()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.agg.html?highlight=agg#pandas.DataFrame.agg)
 5. Create a Python function to get the number of rentals for each customer in June given the dataframe provided by the function `rentals_june`.
 6. Write a Python function named `check_rentals` that given: 
-  - a dataframe with the number of rentals in May by each `customer_id` 
-  - a dataframe with the number of rentals in June by each `customer_id` 
+    - a dataframe with the number of rentals in May by each `customer_id` 
+    - a dataframe with the number of rentals in June by each `customer_id` 
     return a new dataframe with the following columns:
-    - `customer_id` 
-    - `Rentals_May`
-    - `Rental_June`
-    - The difference between the previous columns
+      - `customer_id` 
+      - `Rentals_May`
+      - `Rental_June`
+      - The difference between the previous columns
 
     **Hint**: For this part, you can create a join between the two dataframes created before, using the merge function available for pandas dataframes. Here is a link to the documentation for the [merge function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
 
 7. Create a Python function that given the dataframe returned by the previous function, returns another dataframe with the `customer_id` of customers who rented movies in may but didn't rent any movie in June.
 
-**BONUS** The functions created in points 2 and 3, are specific for a month. Can you create generic function which will accept any month as an input and returns the same information for the given month?
+### Bonus
+
+
+The functions created in points 2 and 3, are specific for a month. Can you create generic function which will accept any month as an input and returns the same information for the given month?
